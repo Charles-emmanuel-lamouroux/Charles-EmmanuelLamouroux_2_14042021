@@ -2,3 +2,74 @@
 {
     font-family: "Raleway", sans-serif;
 }
+body
+{
+    margin: 3.5%;
+    color: black;
+}
+.logo
+{
+    height: fit-content;
+    margin-top: 6vw;
+    margin-left: 7vw;
+}
+
+.navigation
+{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    top: -46px;
+}
+
+.ancre
+{
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.inscription
+{
+    text-align: right;
+    margin-right: 3.5%;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.recherche
+{
+
+}
+
+#accroche
+{
+
+}
+
+.entete
+{
+
+}
+
+.barre_recherche
+{
+    border: 0.5px solid;
+    border-radius: 10px;
+}
+.position
+{
+    background-color: #DEEBFF;
+    
+    
+}
+
+#formulaire
+{
+
+}
+
+.bouton_recherhce
+{
+
+}
