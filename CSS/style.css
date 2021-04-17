@@ -7,32 +7,55 @@ body
     margin: 3.5%;
     color: black;
 }
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
 .logo
 {
     height: fit-content;
-    margin-top: 6vw;
-    margin-left: 7vw;
 }
 
+#block_flex
+{
+    display: flex;
+    justify-content: flex-end;
+}
 .navigation
 {
     display: flex;
-    flex-direction: column-reverse;
     position: relative;
-    top: -46px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
 }
 
 .ancre
 {
     display: flex;
     padding: 0;
-    justify-content: space-around;
+    margin: auto;
+    width: 150px;
+}
+
+.ancre li
+{
+    display: inline;
+    margin: 0 auto;
+    margin-left: 30%;
+} 
+
+.ancre li a
+{
+    display: inline;
 }
 
 .inscription
 {
     text-align: right;
-    margin-right: 3.5%;
+    margin: auto;
     color: #0065FC;
     font-weight: bold;
 }
