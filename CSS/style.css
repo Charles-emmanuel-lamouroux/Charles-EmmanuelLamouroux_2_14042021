@@ -77,20 +77,25 @@ header
 
 .barre_recherche
 {
-    border: 0.5px solid;
-    border-radius: 10px;
+    display: flex;
+    width: 280px;
+    background-color: #DEEBFF;
 }
 .position
 {
-    background-color: #DEEBFF;
+    margin: auto;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: solid;
+    border-width: 1xp;
 }
 
 #formulaire
 {
-
+margin-right: 0px;
 }
 
 .bouton_recherhce
 {
-
+    margin-left: 0px;
 }
