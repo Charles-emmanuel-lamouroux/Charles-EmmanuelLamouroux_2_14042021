@@ -22,6 +22,7 @@ header
 {
     display: flex;
     justify-content: flex-end;
+    background-color: cadetblue;
 }
 .navigation
 {
@@ -60,42 +61,46 @@ header
     font-weight: bold;
 }
 
-.recherche
-{
-    
-}
-
 #accroche
 {
-
+text-align: left;
+font-size: 2ex;
+font-weight: bold;
 }
 
-.entete
+#entete
 {
-
+    text-align:left;
+    font-size: 1.5ex;
+    font-weight: lighter;
 }
-
-.barre_recherche
+.barre
 {
+    background-color: chocolate;
+    max-width: 420px;
+    height:50px;
+    border-radius: 10px;
     display: flex;
-    width: 280px;
-    background-color: #DEEBFF;
 }
+
 .position
 {
-    margin: auto;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border: solid;
-    border-width: 1xp;
+    background-color: #DEEBFF;
+    width: 15%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
-#formulaire
+.champ
 {
-margin-right: 0px;
+    background-color: darkgreen;
+    width: 50%;
 }
 
-.bouton_recherhce
+.bouton_recherche
 {
-    margin-left: 0px;
+    background-color: #0065FC;
+    width: 50%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }

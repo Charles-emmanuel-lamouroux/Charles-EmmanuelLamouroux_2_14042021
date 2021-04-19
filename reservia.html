@@ -26,6 +26,11 @@
             media="screen and (min-width: 1400px)"
             href="CSS/style_large.css"
         />
+        <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        >
+        
     </head>
     <body>
         <header>
@@ -57,14 +62,14 @@
         <!-- corp -->
         <main>
             <!-- recherche-->
-            <section class="recherche">
+            <section>
                 <h1 id="accroche">
                     Trouvez votre h&eacute;bergement pour des vacances de r&ecirc;ve
                 </h1>
-                <p class="entete">
+                <p id="entete">
                     En plein centre ville ou en pleun nature
                 </p>
-                <div class="barre_recherche">
+                <div class="barre">
                     <span class="position">
                         <i class="fas fa-map-marker-alt"></i>
                     </span>
@@ -72,6 +77,7 @@
                         type="texte" 
                         placeholder="Marseille, France"
                         id="formulaire"
+                        class="champ"
                     />
                     <button 
                         class="bouton_recherche" 
