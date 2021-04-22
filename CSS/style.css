@@ -13,7 +13,12 @@ header
     display: flex;
     justify-content: space-between;
 }
-
+#box_logo
+{
+    background-color: black;
+    width: 100px;
+    height: 120px;
+}
 .logo
 {
     height: fit-content;
@@ -95,6 +100,13 @@ font-weight: bold;
     width: 15%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#icon
+{
+    align-items: center;
 }
 
 .champ
@@ -240,6 +252,14 @@ font-weight: bold;
     height: 198px;
     margin: auto;
     border-radius: 25px;
+}
+
+.img_marseille
+{
+    justify-content: center;
+    width: 239px;
+    height: 115px;
+    background-color: black;
 }
 
 .images_marseille
