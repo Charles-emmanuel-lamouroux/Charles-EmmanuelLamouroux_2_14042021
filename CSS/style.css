@@ -8,6 +8,8 @@ body
     color: black;
 }
 
+/* header*/
+
 header
 {
     display: flex;
@@ -20,6 +22,8 @@ header
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/* block de navigation*/
 
 #block_flex
 {
@@ -66,7 +70,10 @@ header
     width: 110px;
     text-align: center;
     font-size: 1.5em;
+    margin-left: 80px;
 }
+
+/*recherche*/
 
 #accroche
 {
@@ -99,11 +106,6 @@ font-weight: bold;
     vertical-align: middle;
 }
 
-#icon
-{
-    align-items: center;
-}
-
 .champ
 {
     width: 50%;
@@ -116,6 +118,8 @@ font-weight: bold;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
+/* filtre*/
 
 .bouton_filtres
 {
@@ -132,12 +136,15 @@ font-weight: bold;
     width: 40px;
 }
 
+/*Présentation*/
+
 #presentation
 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
 }
+/* rubrique populaire*/
 #populaires
 {
     width: 422px;
@@ -189,7 +196,6 @@ font-weight: bold;
     margin: auto;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    
 }
 
 .texte_populaire
@@ -208,6 +214,8 @@ font-weight: bold;
 {
     margin-bottom: 10px;
 }
+
+/*hebergement marseille*/
 
 #hebergement
 {
@@ -266,3 +274,9 @@ font-weight: bold;
     border-top-right-radius: 25px;
 }
 
+/* activetes */
+
+.activites_marseille
+{
+    font-style: blod;
+}
