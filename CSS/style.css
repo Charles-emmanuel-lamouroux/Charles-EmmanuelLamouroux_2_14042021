@@ -8,6 +8,26 @@ body
     color: black;
 }
 
+h1
+{
+    font-size: 1.5em;
+}
+
+h2
+{
+    font-size: 1.17em;
+}
+
+p
+{
+    font-size: 1rem;
+}
+
+h6
+{
+    font-size: 1.1rem;
+}
+
 /* header*/
 
 header
@@ -58,7 +78,6 @@ header
 .ancre li a
 {
     display: inline;
-    font-size: 1.5em;
 }
 
 .inscription
@@ -79,14 +98,11 @@ header
 {
 text-align: left;
 font-size: 1.5em;
-font-weight: bold;
 }
 
 #entete
 {
     text-align:left;
-    font-size: 1em;
-    font-weight: lighter;
 }
 .barre
 {
@@ -103,7 +119,15 @@ font-weight: bold;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.icon_position
+{
     vertical-align: middle;
+    margin-top: 15px;
 }
 
 .champ
@@ -127,15 +151,36 @@ font-weight: bold;
     height: 50px;
     border-radius: 25px;
     margin: auto;
+    display: inline-flex;
 }
-
+.icon
+{
+    height: 100%;
+    width: 50px;
+    margin-left: 0%;
+    display: inline-flex;
+    align-items: center;
+}
 .img_bouton_filtres
 {
-    border-radius: 25px;
+    border-radius: 50px;
     height: 40px;
     width: 40px;
-}
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    position: relative;
 
+}
+.truc
+{
+    text-align: center;
+    vertical-align: center;
+    height: 100%;
+    width: 145px;
+}
 /*Présentation*/
 
 #presentation
@@ -143,11 +188,13 @@ font-weight: bold;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: blueviolet;
 }
 /* rubrique populaire*/
 #populaires
 {
-    width: 422px;
+    min-width: 422px;
     height: 628px;
     background-color: #F2F2F2;
     display: flex;
@@ -167,12 +214,11 @@ font-weight: bold;
 .titre
 {
     background-color: violet;
-    font-size: 1em;
 }
 
 .chambre
 {
-    background-color: coral;
+    
     width: auto;
     height: 85%;
     margin-bottom: 30px;
@@ -187,6 +233,15 @@ font-weight: bold;
     height: 146px;
     margin: auto;
     border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.image
+{
+    width: 128px;
+    height: 136px;
+    margin: auto;
 }
 .images_popu
 {
@@ -200,14 +255,8 @@ font-weight: bold;
 
 .texte_populaire
 {
-    font-size: 1.5em;
     font-weight: bold;
     margin: auto;
-}
-
-.prix
-{
-    font-size: 1em;
 }
 
 .notation
@@ -219,8 +268,8 @@ font-weight: bold;
 
 #hebergement
 {
-    width: 880px;
-    height: 628px;
+    min-width: 880px;
+    min-height: 628px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -288,7 +337,6 @@ font-weight: bold;
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    background-color: brown;
     flex-wrap: wrap;
 }
 
