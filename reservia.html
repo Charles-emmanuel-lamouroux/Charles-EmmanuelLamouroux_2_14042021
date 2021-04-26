@@ -83,9 +83,12 @@ margin-top: 15px;
                 <p id="entete">
                     En plein centre ville ou en pleun nature
                 </p>
+                <!--Barre de recherche-->
                 <div class="barre">
                     <div class="position">
-                        <i class="fas fa-map-marker-alt "></i>
+                        <span class="icon_position">
+                            <i class="fas fa-map-marker-alt "></i>
+                        </span>
                     </div>
                     <input 
                         type="texte" 
@@ -102,32 +105,54 @@ margin-top: 15px;
             </section>
             <!--Filtre-->
             <section>
-                <h2 id="filtres">
+                <h3 id="filtres">
                     filtres
-                </h2>
+                </h3>
                 <div id="block_filtre">
                     <button class="bouton_filtres">
-                        <span class="img_bouton_filtres">
-                            <i class="fas fa-money-bill-wave"></i>
+                        <span class="icon">
+                            <span class="img_bouton_filtres">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </span>
                         </span>
-                        Économique
+                        <span class="texte_bouton">
+                            <p>
+                                Économique
+                            </p>
+                        </span>
                      </button>
                     <button class="bouton_filtres">
-                        <span class="img_bouton_filtres">
-                            <i class="fas fa-child"></i>
-                        </span>
-                        Familial
+                            <span class="icon">
+                                <span class="img_bouton_filtres">
+                                    <i class="fas fa-child"></i>
+                                </span>
+                            </span>
+                            <span class="texte_bouton">
+                                <p>
+                                    Familial
+                                </p>
                     </button>
                     <button class="bouton_filtres">
-                        <span class="img_bouton_filtres"><i class="fas fa-heart"></i>
+                        <span class="icon">
+                            <span class="img_bouton_filtres">
+                                <i class="fas fa-heart"></i>
+                            </span>
                         </span>
-                        Romantique
+                        <span class="texte_bouton">
+                            <p>
+                                Romantique
+                            </p>
                     </button>
                     <button class="bouton_filtres">
-                        <span class="img_bouton_filtres">
-                            <i class="fas fa-dog"></i>
+                        <span class="icon">
+                            <span class="img_bouton_filtres">
+                                <i class="fas fa-dog"></i>
+                            </span>
                         </span>
-                        Animaux autorisés
+                        <span class="texte_bouton">
+                            <p>
+                                Animaux autorisés
+                            </p>
                     </button>
                 </div>
             </section>
@@ -136,65 +161,73 @@ margin-top: 15px;
                 <span>
                     <i class="fas fa-info-circle"></i>
                 </span>
-                <Span>
+                <p>
                     Plus de 500 logements sont disponibles dans cette ville
-                </Span>
+                </p>
             </section>
             <!--Présentation hotel-->
            <section id="presentation">
                 <!--Les plus populaires-->
                 <section id="populaires">
                     <div class="titre_populaires">
-                        <h3 class="titre">
+                        <h1 class="titre">
                             Les plus populaires
-                        </h3>
+                        </h1>
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <section class="chambre">
                         <!--Hôtel le soleil du maytin-->
                         <div class="les_plus_populaires">
-                            <img
-                                src="images/les_plus_populaires/le_soleil_du_matin.jpg"
-                                alt="Hôtel le soleil du matin"
-                                class="images_popu"
-                            />
-                            <div>
-                                <h4 class="texte_populaire">
-                                    Hôtel le soleil du matin
-                                </h4>
-                                <p class="prix">
-                                    Nuit à partir de 128€
-                                </p>
+                            <div class="image">
+                                <img
+                                    src="images/les_plus_populaires/le_soleil_du_matin.jpg"
+                                    alt="Hôtel le soleil du matin"
+                                    class="images_popu"
+                                />
                             </div>
-                            <div class="notation" >
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                            <div>
+                                <div>
+                                    <h2 class="texte_populaire">
+                                        Hôtel le soleil du matin
+                                    </h2>
+                                    <p class="prix">
+                                        Nuit à partir de 128€
+                                    </p>
+                                </div>
+                                <div class="notation" >
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
                         </div>
                         <!--Au coeur de l'eau Chambre d'hôtel-->
                         <div class="les_plus_populaires">
-                            <img
-                                src="images/les_plus_populaires/Au_coeur_de_l'eau.jpg"
-                                alt="Au coeur de l'eau Chambre d'hôtel"
-                                class="images_popu"
-                            />
-                            <div>
-                                <h4 class="texte_populaire">
-                                    Au coeur de l'eau Chambre d'hôtel
-                                </h4>
-                                <p class="prix">
-                                    Nuit à partir de 71€
-                                </p>
+                            <div class="image">
+                                <img
+                                    src="images/les_plus_populaires/Au_coeur_de_l'eau.jpg"
+                                    alt="Au coeur de l'eau Chambre d'hôtel"
+                                    class="images_popu"
+                                />
                             </div>
-                            <div class="notation" >
+                            <div>
+                                <div>
+                                    <h2 class="texte_populaire">
+                                        Au coeur de l'eau Chambre d'hôtel
+                                    </h2>
+                                    <p class="prix">
+                                     Nuit à partir de 71€
+                                    </p>
+                                </div>
+                                <div class="notation" >
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="far fa-star"></i>
+                                </div>
                             </div>
                         </div>
                         <!--Hôtel tout bleu et blanc-->
@@ -205,9 +238,9 @@ margin-top: 15px;
                                 class="images_popu"
                             />
                             <div>
-                                <h4 class="texte_populaire">
+                                <h2 class="texte_populaire">
                                     Hôtel tout bleu et blanc
-                                </h4>
+                                </h2>
                                 <p class="prix">
                                     Nuit à partir de 68€
                                 </p>
@@ -225,9 +258,9 @@ margin-top: 15px;
                 <!--Hébergements à marseille-->
                 <section id="hebergement">
                     <div class="titre_hebergement">
-                        <h3 class="titre">
+                        <h1 class="titre">
                             Hébergement à Marseille
-                        </h3>
+                        </h1>
                     </div>
                     <section class="hotel">
                         <!--Auberge la Cannebière-->
@@ -240,9 +273,9 @@ margin-top: 15px;
                                 />
                             </div>
                             <div>
-                                <h4 class="texte_populaire">
+                                <h2 class="texte_populaire">
                                     Auberge la Cannebière
-                                </h4>
+                                </h2>
                                 <p class="prix">
                                     Nuit à partir de 25€
                                 </p>
@@ -263,9 +296,9 @@ margin-top: 15px;
                                 class="images_marseille"
                             />
                             <div>
-                                <h4 class="texte_populaire">
+                                <h2 class="texte_populaire">
                                     Hôtel du port
-                                </h4>
+                                </h2>
                                 <p class="prix">
                                     Nuit à partir de 52€
                                 </p>
@@ -286,9 +319,9 @@ margin-top: 15px;
                                 class="images_marseille"
                             />
                             <div>
-                                <h4 class="texte_populaire">
+                                <h2 class="texte_populaire">
                                     Hôtel Les mouettes
-                                </h4>
+                                </h2>
                                 <p class="prix">
                                     Nuit à partir de 76€
                                 </p>
@@ -309,9 +342,9 @@ margin-top: 15px;
                                 class="images_marseille"
                             />
                             <div>
-                                <h4 class="texte_populaire">
+                                <h2 class="texte_populaire">
                                     Hôtel de la mer
-                                </h4>
+                                </h2>
                                 <p class="prix">
                                     Nuit à partir de 46€
                                 </p>
@@ -332,9 +365,9 @@ margin-top: 15px;
                                 class="images_marseille"
                             />
                             <div>
-                                <h4 class="texte_populaire">
+                                <h2 class="texte_populaire">
                                     Auberge Le Panier
-                                </h4>
+                                </h2>
                                 <p class="prix">
                                     Nuit à partir de 23€
                                 </p>
@@ -355,9 +388,9 @@ margin-top: 15px;
                                 class="images_marseille"
                             />
                             <div>
-                                <h4 class="texte_populaire">
+                                <h2 class="texte_populaire">
                                     Hôtel chez Amina
-                                </h4>
+                                </h2>
                                 <p class="prix">
                                     Nuit à partir de 96€
                                 </p>
@@ -376,7 +409,7 @@ margin-top: 15px;
             <!--Activités à Marseille-->
             <section>
                 <div class="activites_marseille">
-                    <h5>Activités à Marseille</h5>
+                    <h1>Activités à Marseille</h1>
                 </div>
                 <div id="activites">
                     <!--Vieux Port-->
@@ -389,7 +422,7 @@ margin-top: 15px;
                             />
                         </div>
                         <div class="texte_activites">
-                            <h4>Vieux Port</h4>
+                            <h2>Vieux Port</h2>
                         </div>
                     </div>
                     <!--Fort de Pomègues-->
@@ -402,7 +435,7 @@ margin-top: 15px;
                             />
                         </div>
                         <div class="texte_activites">
-                            <h4>Fort de Pomègues</h4>
+                            <h2>Fort de Pomègues</h2>
                         </div>
                     </div>
                     <!--îles du Frioul-->
@@ -415,7 +448,7 @@ margin-top: 15px;
                             />
                         </div>
                         <div class="texte_activites">
-                            <h4>îles du Friouls</h4>
+                            <h2>îles du Friouls</h2>
                         </div>
                     </div>
                     <!--Parc National des calanques-->
@@ -428,7 +461,7 @@ margin-top: 15px;
                             />
                         </div>
                         <div class="texte_activites">
-                            <h4>Parc National des calanques</h4>
+                            <h2>Parc National des calanques</h2>
                         </div>
                     </div>
                     <!--Notre-Dame-de-la Garde-->
@@ -441,7 +474,7 @@ margin-top: 15px;
                             />
                         </div>
                         <div class="texte_activites">
-                            <h4>Notre-Dame-de-la Garde</h4>
+                            <h2>Notre-Dame-de-la Garde</h2>
                         </div>
                     </div>
                     <!--Parc Longchamp-->
@@ -454,7 +487,7 @@ margin-top: 15px;
                             />
                         </div>
                         <div class="texte_activites">
-                        <h4>Parc Longchamp</h4>
+                        <h2>Parc Longchamp</h2>
                         </div>
                     </div>
                 </div>
