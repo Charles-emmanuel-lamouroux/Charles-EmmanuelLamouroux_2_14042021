@@ -2,7 +2,7 @@
 {
     font-family: "Raleway", sans-serif;
 }
-header .main
+body
 {
     margin: 3.5%;
     color: black;
@@ -16,6 +16,8 @@ h1
 h2
 {
     font-size: 1.17em;
+    font-weight: bold;
+    margin: auto;
 }
 
 p
@@ -189,7 +191,6 @@ font-size: 1.5em;
     flex-direction: row-reverse;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: blueviolet;
 }
 /* rubrique populaire*/
 #populaires
@@ -211,9 +212,11 @@ font-size: 1.5em;
     display: flex;
     justify-content: space-between;
 }
-.titre
+
+.titre_populaires i
 {
-    background-color: violet;
+    margin-top: 30px;
+    margin-right: 35px;
 }
 
 .chambre
@@ -229,6 +232,7 @@ font-size: 1.5em;
 .les_plus_populaires
 {
     background-color: white;
+    box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
     width: 344px;
     height: 146px;
     margin: auto;
@@ -252,24 +256,24 @@ font-size: 1.5em;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
-.texte_populaire
+.text
 {
-    font-weight: bold;
-    margin: auto;
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-left: 1em;
 }
+
 
 .notation
 {
-    margin-bottom: 10px;
+ color: #0065FC;
 }
 
 /*hebergement marseille*/
 
 #hebergement
 {
-    min-width: 880px;
-    min-height: 628px;
+    max-width: 880px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -304,6 +308,7 @@ font-size: 1.5em;
     height: 198px;
     margin: auto;
     border-radius: 25px;
+    box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
 }
 
 .img_marseille
@@ -345,7 +350,7 @@ font-size: 1.5em;
     width: 300px;
     height: 450px;
     border-radius: 25px;
-    box-shadow: 6px 6px 0 black;
+    box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -363,6 +368,7 @@ font-size: 1.5em;
     width: 300px;
     height: 235px;
     border-radius: 25px;
+    box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -381,6 +387,7 @@ font-size: 1.5em;
     width: 300px;
     height: 170px;
     border-radius: 25px;
+    box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
     display: flex;
     flex-direction: column;
 
@@ -400,6 +407,7 @@ font-size: 1.5em;
     width: 300px;
     height: 450px;
     border-radius: 25px;
+    box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
     display: flex;
     flex-direction: column;
 
@@ -419,6 +427,7 @@ font-size: 1.5em;
     width: 300px;
     height: 195px;
     border-radius: 25px;
+    box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
     display: flex;
     flex-direction: column;
 
@@ -438,6 +447,7 @@ font-size: 1.5em;
     width: 300px;
     height: 210px;
     border-radius: 25px;
+    box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
     display: flex;
     flex-direction: column;
     margin-top: 30px;
