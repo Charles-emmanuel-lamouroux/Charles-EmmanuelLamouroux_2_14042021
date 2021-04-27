@@ -305,7 +305,6 @@ font-size: 1.5em;
 {
     background-color: white;
     width: 246px;
-    height: 198px;
     margin: auto;
     border-radius: 25px;
     box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
@@ -326,6 +325,11 @@ font-size: 1.5em;
     margin: auto;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+}
+
+.prix
+{
+    margin: 0;
 }
 
 /* activetes */
