@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Réservia</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2">
         <script
             src="https://kit.fontawesome.com/2cc9a72ed3.js"
             crossorigin="anonymous"
@@ -13,19 +14,19 @@
         href="CSS/style.css" />
         <link
             rel="stylesheet"
-            media="screen and (min-width: 768px)"
-            href="CSS/style_small.css"
+            media="screen and (min-width: 1025px)"
+            href="CSS/style_large.css"
         />
         <link
             rel="stylesheet"
-            media="screen and (min-width: 1024px)"
+            media="screen and (min-width: 769px) and (max-width: 1024px)"
             href="CSS/style_medium.css"
         />
         <link
             rel="stylesheet"
-            media="screen and (min-width: 1400px)"
-            href="CSS/style_large.css"
-        />
+            media="screen and (max-width: 768px)"
+            href="CSS/style_small.css"
+        />        
         <link
         rel="preconnect"
         href="https://fonts.gstatic.com"
@@ -42,30 +43,27 @@
     </head>
     <body>
         <header>
-            <!-- logo -->
-            <img 
-            src="images/logo/Reservia.svg" 
-            alt="logo_reservia"
-            class="logo"
-            />
             <!-- navigation et inscription -->
-            <div id="block_flex">
-                <nav class="navigation">
-                    <ul class="ancre">
-                        <li>
-                            <a href="#hebergement">Hébergements</a>
-                        </li>
-                        <li>
-                            <a href="#activites">Activités</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="inscription">
-                <p>
-                    S'inscrire
-                </p>
-               </div>
-            </div>
+            <nav class="navigation">
+                <ul class="ancre">
+                    <li class="box_logo">
+                        <img 
+                            src="images/logo/Reservia.svg" 
+                            alt="logo_reservia"
+                            class="logo"
+                        />
+                    </li>
+                    <li class="lien active">
+                        <a href="#hebergement">Hébergements</a>
+                    </li>
+                    <li class="lien">
+                        <a href="#activites"&>Activités</a>
+                    </li>
+                    <li class="inscription">
+                        <a href="#">S'inscrire</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <!-- corp -->
         <main>
@@ -75,15 +73,11 @@
                     Trouvez votre h&eacute;bergement pour des vacances de r&ecirc;ve
                 </h1>
                 <p id="entete">
-                    En plein centre ville ou en pleun nature
+                    En plein centre ville ou en plein nature
                 </p>
                 <!--Barre de recherche-->
                 <div class="barre">
-                    <div class="position">
-                        <span class="icon_position">
-                            <i class="fas fa-map-marker-alt "></i>
-                        </span>
-                    </div>
+                    <i class="fas fa-map-marker-alt "></i>
                     <input 
                         type="text" 
                         placeholder="Marseille, France"
@@ -93,56 +87,55 @@
                     <button 
                         class="bouton_recherche" 
                         type="button"
-                    >Recherche
+                    >
+                    <span id="texte_bouton">
+                        Recherche
+                    </span>
+                    <i class="fas fa-search"></i>
                     </button>
                 </div>
             </section>
             <!--Filtre-->
             <section>
-                <h3 id="filtres">
-                    filtres
-                </h3>
-                <div id="block_filtre">
-                    <button class="bouton_filtres">
-                        <span class="icon">
-                            <span class="img_bouton_filtres">
-                                <i class="fas fa-money-bill-wave"></i>
-                            </span>
-                        </span>
-                        <span class="texte_bouton">
-                            Économique
-                        </span>
-                     </button>
-                    <button class="bouton_filtres">
-                            <span class="icon">
-                                <span class="img_bouton_filtres">
-                                    <i class="fas fa-child"></i>
+                <div class="selection">
+                    <h3 id="filtres">
+                        filtres
+                    </h3>
+                    <ul id="block_filtre">
+                        <li class="bouton1">
+                            <button class="bouton_filtres">
+                                <i class="filterIcon fas fa-money-bill-wave"></i>
+                                <span class="texte_bouton">
+                                    Économique
                                 </span>
-                            </span>
-                            <span class="texte_bouton">
-                                Familial
-                            </span>
-                    </button>
-                    <button class="bouton_filtres">
-                        <span class="icon">
-                            <span class="img_bouton_filtres">
-                                <i class="fas fa-heart"></i>
-                            </span>
-                        </span>
-                        <span class="texte_bouton">
-                            Romantique
-                        </span>
-                    </button>
-                    <button class="bouton_filtres">
-                        <span class="icon">
-                            <span class="img_bouton_filtres">
-                                <i class="fas fa-dog"></i>
-                            </span>
-                        </span>
-                        <span class="texte_bouton">
-                             Animaux autorisés
-                        </span>
-                    </button>
+                            </button>
+                        </li>
+                        <li class="bouton2">
+                            <button class="bouton_filtres">
+                                <i class="filterIcon fas fa-child"></i>
+                                <span class="texte_bouton">
+                                    Familial
+                                </span>
+                            </button>
+                        </li>
+                        <li class="bouton3">
+                            <button class="bouton_filtres">
+                                <i class="filterIcon fas fa-heart"></i>
+                                <span class="texte_bouton">
+                                    Romantique
+                                </span>
+                            </button>
+                        </li>
+                        <li class="bouton4">
+                            <button class="bouton_filtres">
+                                <i class="filterIcon fas fa-dog"></i>
+                                </span>
+                                <span class="texte_bouton">
+                                    Animaux autorisés
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <!--Info-->
@@ -155,7 +148,7 @@
                 </p>
             </section>
             <!--Présentation hotel-->
-           <section id="presentation">
+            <section id="presentation">
                 <!--Les plus populaires-->
                 <section id="populaires">
                     <div class="titre_populaires">
@@ -174,7 +167,7 @@
                                     class="images_popu"
                                 />
                             </div>
-                            <div class="text">
+                            <div class="block_texte">
                                 <div>
                                     <h2>
                                         Hôtel le soleil du matin
@@ -184,11 +177,13 @@
                                     </p>
                                 </div>
                                 <div class="notation" >
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <div class="note">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -201,21 +196,23 @@
                                     class="images_popu"
                                 />
                             </div>
-                            <div class="text">
+                            <div class="block_texte">
                                 <div>
                                     <h2>
                                         Au coeur de l'eau Chambre d'hôtel
                                     </h2>
                                     <p class="prix">
-                                     Nuit à partir de 71€
+                                        Nuit à partir de 71€
                                     </p>
                                 </div>
                                 <div class="notation" >
+                                    <div class="note">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
                                 </div>
                             </div>
                         </div>
@@ -228,7 +225,7 @@
                                     class="images_popu"
                                 />
                             </div>
-                            <div class="text">
+                            <div class="block_texte">
                                 <div>
                                     <h2>
                                         Hôtel tout bleu et blanc
@@ -242,7 +239,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
                             </div>
                         </div>
@@ -265,7 +262,7 @@
                                     class="images_marseille"
                                 />
                             </div>
-                            <div class=texte>
+                            <div class=text_marseille>
                                 <div>
                                     <h2>
                                         Auberge la Cannebière
@@ -279,7 +276,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
                             </div>
                         </div>
@@ -400,7 +397,7 @@
                         </div>
                     </section>
                 </section>
-           </section>
+            </section>
             <!--Activités à Marseille-->
             <section>
                 <div class="activites_marseille">
