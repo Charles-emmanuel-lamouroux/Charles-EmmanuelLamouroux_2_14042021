@@ -320,6 +320,11 @@ section.info i {
   border-top-right-radius: 25px;
 }
 
+.text_marseille {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: left;
+}
 .prix {
   margin: 0;
 }
