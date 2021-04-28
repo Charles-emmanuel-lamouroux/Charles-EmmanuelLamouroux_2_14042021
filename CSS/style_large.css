@@ -1,0 +1,25 @@
+.ancre li
+{
+    display: inline;
+    height: 60px;
+    line-height: 60px;
+}
+ul.ancre li.lien{
+    padding-right: 34px;
+    padding-left: 34px;
+}
+
+.ancre li img.logo
+{
+    padding-top: 7px;
+}
+
+.lien.active
+{
+    border-top: solid 2px blue;
+}
+
+ul.ancre li.inscription
+{
+    padding-left: 34px;
+}

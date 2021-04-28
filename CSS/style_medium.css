@@ -1,0 +1,43 @@
+ul.ancre li.lien {
+  width: 50%;
+  order: 1;
+  border-bottom: solid 2px gray;
+  border-top: solid 2px transparent;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+ul.ancre li.lien.active {
+  border-bottom: solid 2px blue;
+}
+
+.inscription {
+  padding-left: 0;
+  order: 0;
+}
+
+.box_logo {
+  width: calc(100% - 120px);
+}
+
+main {
+  padding: 0;
+}
+
+section#presentation section#populaires {
+  width: 100%;
+  height: auto;
+}
+
+section.chambre {
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+div.les_plus_populaires {
+  width: 48%;
+  margin-left: 7px;
+  margin-right: 7px;
+}

@@ -1,0 +1,42 @@
+ul.ancre li.lien {
+  width: 50%;
+  order: 1;
+  border-bottom: solid 2px gray;
+  border-top: solid 2px transparent;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+ul.ancre li.lien.active {
+  border-bottom: solid 2px blue;
+}
+
+.inscription {
+  padding-left: 0;
+  order: 0;
+}
+
+.box_logo {
+  width: calc(100% - 120px);
+}
+
+main {
+  padding: 0;
+}
+section#presentation section#populaires {
+  width: 100%;
+  height: auto;
+  padding: 15px 0 15px 0;
+}
+
+section.chambre {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 15px 0 15px 0;
+}
+.block_texte {
+  padding-right: 1em;
+  padding-left: 1em;
+}
