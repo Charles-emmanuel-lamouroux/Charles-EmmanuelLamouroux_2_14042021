@@ -9,8 +9,8 @@ ul.ancre li.lien {
   padding-right: 0;
 }
 
-ul.ancre li.lien.active {
-  border-bottom: solid 2px blue;
+ul.ancre li.lien {
+  border-bottom: solid 2px #0065fc;
 }
 
 .inscription {
@@ -25,6 +25,15 @@ ul.ancre li.lien.active {
 main {
   padding: 0;
 }
+
+#texte_bouton {
+  display: none;
+}
+
+.bouton_recherche i {
+  display: block;
+}
+
 section#presentation section#populaires {
   width: 100%;
   height: auto;
@@ -32,11 +41,19 @@ section#presentation section#populaires {
 }
 
 section.chambre {
-  flex-flow: row wrap;
-  justify-content: space-between;
   padding: 15px 0 15px 0;
+  vertical-align: middle;
 }
 .block_texte {
   padding-right: 1em;
   padding-left: 1em;
+}
+
+div.les_plus_populaires {
+  max-width: 371px;
+}
+
+section#herbergement {
+  width: 100%;
+  background-color: white;
 }

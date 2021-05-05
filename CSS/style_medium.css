@@ -9,8 +9,8 @@ ul.ancre li.lien {
   padding-right: 0;
 }
 
-ul.ancre li.lien.active {
-  border-bottom: solid 2px blue;
+ul.ancre li.lien {
+  border-bottom: solid 2px #0065fc;
 }
 
 .inscription {
@@ -40,4 +40,24 @@ div.les_plus_populaires {
   width: 48%;
   margin-left: 7px;
   margin-right: 7px;
+}
+
+section#herbergement {
+  width: 100%;
+  background-color: white;
+}
+
+section ul#activites {
+  display: grid;
+  grid-template-areas:
+    "image1 image2"
+    "image1 image2"
+    "image1 image7"
+    "image1 image3"
+    "image 4 image5"
+    "image 4 image8"
+    "image 4 image6"
+    "image 4 image6";
+  grid-auto-rows: 165px 45px;
+  grid-column-gap: 40px;
 }
