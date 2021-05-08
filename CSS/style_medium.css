@@ -38,11 +38,12 @@ section.chambre {
 
 div.les_plus_populaires {
   width: 48%;
+  min-width: 345px;
   margin-left: 7px;
   margin-right: 7px;
 }
 
-section#herbergement {
+section#hebergement {
   width: 100%;
   background-color: white;
 }
@@ -54,10 +55,11 @@ section ul#activites {
     "image1 image2"
     "image1 image7"
     "image1 image3"
-    "image 4 image5"
-    "image 4 image8"
-    "image 4 image6"
-    "image 4 image6";
+    "image4 image5"
+    "image4 image8"
+    "image4 image6"
+    "image4 image6";
   grid-auto-rows: 165px 45px;
   grid-column-gap: 40px;
+  width: 100%;
 }

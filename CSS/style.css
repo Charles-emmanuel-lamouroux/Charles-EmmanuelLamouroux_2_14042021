@@ -42,6 +42,22 @@ main > section {
   margin-bottom: 20px;
 }
 
+div.margin_left {
+  display: inline;
+  min-width: 3%;
+  background-color: #0065fc;
+}
+
+div.body {
+  max-width: 1500px;
+}
+
+div.margin_right {
+  display: inline;
+  min-width: 3%;
+  background-color: #0065fc;
+}
+
 /* header*/
 
 a {
@@ -79,13 +95,14 @@ a {
   font-weight: bold;
   font-size: 1.1em;
   padding-right: 20px;
+  flex-grow: 0;
 }
 
 li.lien {
   border-top: solid 2px #f2f2f2;
 }
 
-ul.ancre.li.lien:hover {
+li.lien:hover {
   border-top: solid 2px #0065fc;
 }
 
@@ -246,12 +263,14 @@ section.info i {
   flex-flow: column;
   align-items: center;
   padding: 15px;
+  width: 100%;
 }
 .les_plus_populaires {
   background-color: white;
   box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
   height: 146px;
   max-width: 404px;
+  width: 100%;
   border-radius: 25px;
   display: flex;
   flex-direction: row;
@@ -387,7 +406,6 @@ div.texte_hebergement {
     "image1 image3 image4 image6";
   grid-auto-rows: 165px 45px 45px 165px;
   grid-column-gap: 40px;
-  grid-template-columns: 300px 300px 300px 300px;
 }
 
 #A1 {
@@ -446,14 +464,21 @@ div.texte_hebergement {
 
 .P1 {
   width: 100%;
-  height: calc(100%-50xp);
-  border-radius: 25px;
+  height: calc(100% - 50px);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 div.P1 > img {
   width: 100%;
-  height: calc(100%-50xp);
-  border-radius: 25px;
+  height: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.texte_activites h4 {
+  align-items: center;
+  margin: 10px;
 }
 
 .pied_de_pages {

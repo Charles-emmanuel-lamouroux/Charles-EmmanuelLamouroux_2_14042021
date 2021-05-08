@@ -41,6 +41,7 @@ section#presentation section#populaires {
 }
 
 section.chambre {
+  max-width: 371;
   padding: 15px 0 15px 0;
   vertical-align: middle;
 }
@@ -50,10 +51,24 @@ section.chambre {
 }
 
 div.les_plus_populaires {
-  max-width: 371px;
+  max-width: 100%;
 }
 
-section#herbergement {
+section#hebergement {
   width: 100%;
   background-color: white;
+}
+
+section ul#activites {
+  display: grid;
+  grid-template-areas:
+    "image1"
+    "image2"
+    "image3"
+    "image4"
+    "image5"
+    "image6";
+  grid-auto-rows: 165px;
+  grid-column-gap: 40px;
+  width: 100%;
 }
