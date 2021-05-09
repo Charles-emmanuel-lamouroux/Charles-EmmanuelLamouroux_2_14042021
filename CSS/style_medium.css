@@ -60,6 +60,6 @@ section ul#activites {
     "image4 image6"
     "image4 image6";
   grid-auto-rows: 165px 45px;
-  grid-column-gap: 40px;
+  grid-column-gap: 60px;
   width: 100%;
 }
