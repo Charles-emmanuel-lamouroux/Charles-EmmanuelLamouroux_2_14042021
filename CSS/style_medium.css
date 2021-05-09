@@ -53,10 +53,10 @@ section ul#activites {
   grid-template-areas:
     "image1 image2"
     "image1 image2"
-    "image1 image7"
+    "image1 image3"
     "image1 image3"
     "image4 image5"
-    "image4 image8"
+    "image4 image5"
     "image4 image6"
     "image4 image6";
   grid-auto-rows: 165px 45px;
