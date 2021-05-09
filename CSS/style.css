@@ -263,7 +263,6 @@ section.info i {
   flex-flow: column;
   align-items: center;
   padding: 15px;
-  width: 100%;
 }
 .les_plus_populaires {
   background-color: white;
@@ -326,7 +325,7 @@ section.info i {
 /*hebergement marseille*/
 
 #hebergement {
-  width: 880px;
+  min-height: 686px;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
