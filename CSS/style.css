@@ -513,17 +513,17 @@ div.P1 > img {
 }
 
 .A_propos {
-  padding: 10px 30px 10px 30px;
+  padding: 10px auto 10px auto;
   grid-area: liste1;
 }
 
 .nos_hebergements {
-  padding: 10px 30px 10px 30px;
+  padding: 10px auto 10px auto;
   grid-area: liste2;
 }
 
 .Assistance {
-  padding: 10px 30px 10px 30px;
+  padding: 10px auto 10px auto;
   grid-area: liste3;
 }
 
