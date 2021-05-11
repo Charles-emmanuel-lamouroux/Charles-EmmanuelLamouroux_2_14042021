@@ -10,6 +10,10 @@ ul.ancre li.lien {
 }
 
 ul.ancre li.lien {
+  border-bottom: solid 2px white;
+}
+
+ul.ancre li.lien:active {
   border-bottom: solid 2px #0065fc;
 }
 
@@ -22,10 +26,6 @@ ul.ancre li.lien {
   width: calc(100% - 120px);
 }
 
-main {
-  padding: 0;
-}
-
 section#presentation section#populaires {
   width: 100%;
   height: auto;
@@ -33,7 +33,7 @@ section#presentation section#populaires {
 
 section.chambre {
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 div.les_plus_populaires {

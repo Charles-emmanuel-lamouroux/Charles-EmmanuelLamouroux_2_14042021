@@ -10,6 +10,10 @@ ul.ancre li.lien {
 }
 
 ul.ancre li.lien {
+  border-bottom: solid 2px white;
+}
+
+ul.ancre li.lien:active {
   border-bottom: solid 2px #0065fc;
 }
 
@@ -43,7 +47,7 @@ section#presentation section#populaires {
 
 section.chambre {
   max-width: 371;
-  padding: 15px 0 15px 0;
+  padding: 15px 15px 15px 15px;
   vertical-align: middle;
 }
 .block_texte {
@@ -58,6 +62,21 @@ div.les_plus_populaires {
 section#hebergement {
   width: 100%;
   background-color: white;
+}
+.titre_hebergement {
+  margin-top: 30px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.marseille {
+  width: calc(100% - 10px);
+}
+.images_marseille {
+  width: calc(100% - 4px);
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 section ul#activites {

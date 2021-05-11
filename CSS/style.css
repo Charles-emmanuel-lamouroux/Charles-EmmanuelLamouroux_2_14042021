@@ -70,6 +70,15 @@ a {
   flex-grow: 1;
   padding-left: 20px;
 }
+.ancre li img.logo {
+  padding-top: 7px;
+}
+
+.ancre li {
+  display: inline;
+  height: 60px;
+  line-height: 60px;
+}
 
 .ancre li:not(.box_logo) {
   text-align: center;
@@ -85,6 +94,12 @@ a {
   font-size: 1.1em;
   padding-right: 20px;
   flex-grow: 0;
+  padding-left: 34px;
+}
+
+ul.ancre li.lien {
+  padding-right: 34px;
+  padding-left: 34px;
 }
 
 li.lien {
@@ -232,18 +247,22 @@ section.info p {
 /*Présentation*/
 
 #presentation {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas:
+    "block1"
+    "block2";
+  grid-auto-rows: auto;
+  grid-column-gap: 40px;
 }
 /* rubrique populaire*/
 
 #populaires {
-  min-width: 420px;
+  grid-area: block1;
+  min-width: 30%;
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 15px;
+  margin-bottom: 10px;
 }
 
 .titre_populaires {
@@ -261,9 +280,10 @@ section.info p {
 .chambre {
   margin-bottom: 30px;
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   align-items: center;
   padding: 15px;
+  justify-content: space-evenly;
 }
 .les_plus_populaires {
   background-color: white;
@@ -326,7 +346,8 @@ section.info p {
 /*hebergement marseille*/
 
 #hebergement {
-  min-height: 686px;
+  grid-area: block2;
+  min-height: 400px;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -342,21 +363,19 @@ section.info p {
 }
 
 .hotel {
-  width: auto;
   height: 85%;
   margin-bottom: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  max-width: 880px;
 }
 
 .marseille {
   background-color: white;
   width: 246px;
   max-height: 200px;
-  margin: auto auto 15px auto;
+  margin-bottom: 15px;
   border-radius: 25px;
   box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
 }
@@ -396,7 +415,7 @@ div.texte_hebergement {
 
 #activites {
   list-style: none;
-  padding-inline-start: 0;
+  padding-inline-start: 0px;
   width: 100%;
   display: grid;
   grid-template-areas:
