@@ -50,6 +50,11 @@ div.body {
   margin: auto;
 }
 
+img {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
 /* header*/
 
 a {
@@ -181,7 +186,7 @@ i.fas.fa-map-marker-alt {
 /* filtre*/
 div.selection {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #filtres {
@@ -192,11 +197,12 @@ div.selection {
   list-style: none;
   display: flex;
   flex-flow: row wrap;
-  margin: 0;
+  margin-top: 7px;
   padding: 0;
 }
 
 .bouton_filtres {
+  margin-bottom: 10px;
   padding: 0;
   padding-right: 20px;
   border-radius: 25px;
@@ -421,7 +427,7 @@ div.texte_hebergement {
     "image1 image2 image4 image8"
     "image1 image7 image4 image6"
     "image1 image3 image4 image6";
-  grid-auto-rows: 165px 45px 45px 165px;
+  grid-auto-rows: 165px 10px 10px 165px;
   grid-column-gap: 40px;
 }
 
