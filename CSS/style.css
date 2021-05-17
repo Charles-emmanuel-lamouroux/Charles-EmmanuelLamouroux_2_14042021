@@ -5,6 +5,9 @@ body {
   margin: 0;
   color: black;
 }
+footer {
+  background-color: #f2f2f2;
+}
 
 h1 {
   font-size: 1.5em;
@@ -23,7 +26,7 @@ p {
   font-size: 1rem;
 }
 
-h6 {
+section.info p {
   font-size: 1.1rem;
   margin-top: 0px;
   margin-left: 0px;
@@ -261,28 +264,25 @@ section.info p {
   min-width: 30%;
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding: 15px;
-  margin-bottom: 10px;
 }
 
 .titre_populaires {
-  margin-top: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .titre_populaires i {
-  margin-top: 30px;
+  font-size: 1.5em;
 }
 
 .chambre {
-  margin-bottom: 30px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  padding: 15px;
+  padding: 0 15px 0 15px;
   justify-content: space-evenly;
 }
 .les_plus_populaires {
@@ -294,8 +294,7 @@ section.info p {
   border-radius: 25px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .image {
@@ -356,7 +355,6 @@ section.info p {
 }
 
 .titre_hebergement {
-  margin-top: 30px;
   margin-left: 35px;
   display: flex;
   justify-content: space-between;
@@ -501,10 +499,12 @@ div.P1 > img {
 }
 
 .pied_de_pages {
+  max-width: 1500px;
   background-color: #f2f2f2;
   display: grid;
   grid-template-areas: "liste1 liste2 liste3";
   grid-column-gap: 40px;
+  margin: auto;
 }
 
 .texte_activites {
