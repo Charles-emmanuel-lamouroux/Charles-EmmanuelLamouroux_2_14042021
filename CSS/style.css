@@ -27,10 +27,11 @@ p {
 }
 
 section.info h5 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 0px;
   margin-left: 0px;
   margin-bottom: 0px;
+  font-weight: normal;
 }
 
 em.montant {
@@ -114,8 +115,17 @@ li.lien {
   border-top: solid 2px #f2f2f2;
 }
 
-li.lien:hover {
+.lien:hover {
   border-top: solid 2px #0065fc;
+}
+
+li.lien > a {
+  font-weight: bold;
+  color: #000000;
+}
+
+li.lien > a:hover {
+  color: #0065fc;
 }
 
 /*recherche*/
@@ -136,7 +146,7 @@ li.lien:hover {
 }
 
 i.fas.fa-map-marker-alt {
-  background-color: #deebff;
+  background-color: #f2f2f2;
   width: 50px;
   height: 50px;
   border-top-left-radius: 15px;
@@ -235,7 +245,7 @@ div.selection {
 
 .info {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 section.info i {
@@ -249,23 +259,26 @@ section.info i {
   font-size: 0.75em;
 }
 
-section.info p {
-  margin-left: 5px;
+section.info h5 {
+  margin-left: 10px;
+  margin-top: 2px;
 }
 
 /*Présentation*/
 
 #presentation {
+  margin-top: 20px;
   display: grid;
   grid-template-areas:
     "block1"
     "block2";
   grid-auto-rows: auto;
-  grid-column-gap: 40px;
+  grid-column-gap: 20px;
 }
 /* rubrique populaire*/
 
 #populaires {
+  margin-top: 15px;
   grid-area: block1;
   min-width: 30%;
   background-color: #f2f2f2;
@@ -276,7 +289,7 @@ section.info p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 30px;
   padding-right: 20px;
 }
 
@@ -295,7 +308,7 @@ section.info p {
   background-color: white;
   box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
   height: 146px;
-  max-width: 404px;
+  max-width: 395px;
   width: 100%;
   border-radius: 25px;
   display: flex;
@@ -342,15 +355,21 @@ section.info p {
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .note {
   color: #0065fc;
 }
 
+.notation > i.fas {
+  font-size: 0.9em;
+}
+
 /*hebergement marseille*/
 
 #hebergement {
+  margin-top: 15px;
   grid-area: block2;
   min-height: 400px;
   background-color: #f2f2f2;
@@ -379,7 +398,7 @@ section.info p {
   background-color: white;
   width: 246px;
   max-height: 200px;
-  margin-bottom: 15px;
+  margin: 0 5px 15px 5px;
   border-radius: 25px;
   box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
 }
@@ -396,8 +415,9 @@ section.info p {
 .text_marseille {
   padding-left: 15px;
 }
-.text_marseille h2 {
+.text_marseille h4 {
   margin-top: 10px;
+  margin-bottom: 5px;
   font-size: 1.15em;
 }
 
@@ -424,10 +444,11 @@ div.texte_hebergement {
   display: grid;
   grid-template-areas:
     "image1 image2 image4 image5"
-    "image1 image2 image4 image8"
-    "image1 image7 image4 image6"
+    "image1 image2 image4 stall1"
+    "image1 stall2 image4 image6"
     "image1 image3 image4 image6";
-  grid-auto-rows: 165px 10px 10px 165px;
+  grid-template-columns: auto;
+  grid-template-rows: 200px 45px 45px 200px;
   grid-column-gap: 40px;
 }
 
@@ -437,7 +458,6 @@ div.texte_hebergement {
   box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 }
 
 #A2 {
@@ -446,7 +466,6 @@ div.texte_hebergement {
   box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 }
 
 #A3 {
@@ -455,7 +474,6 @@ div.texte_hebergement {
   box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 }
 
 #A4 {
@@ -464,7 +482,6 @@ div.texte_hebergement {
   box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 }
 
 #A5 {
@@ -473,7 +490,6 @@ div.texte_hebergement {
   box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 }
 
 #A6 {
@@ -482,12 +498,12 @@ div.texte_hebergement {
   box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 }
 
 .P1 {
   width: 100%;
-  height: calc(100% - 50px);
+  height: 100%;
+  min-height: 80%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -497,6 +513,11 @@ div.P1 > img {
   height: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+}
+
+.texte_activites {
+  height: auto;
+  flex-grow: 1;
 }
 
 .texte_activites h4 {
@@ -511,11 +532,6 @@ div.P1 > img {
   grid-template-areas: "liste1 liste2 liste3";
   grid-column-gap: 40px;
   margin: auto;
-}
-
-.texte_activites {
-  height: 50px;
-  justify-items: center;
 }
 
 .A_propos {

@@ -17,6 +17,18 @@ ul.ancre li.lien:active {
   border-bottom: solid 2px #0065fc;
 }
 
+ul.ancre li.lien:hover {
+  border-bottom: solid 2px #0065fc;
+}
+
+ul.ancre li.lien > a:active {
+  color: #0065fc;
+}
+
+ul.ancre li.lien > a:hover {
+  color: #0065fc;
+}
+
 .inscription {
   padding-left: 0;
   order: 0;
@@ -61,6 +73,7 @@ section ul#activites {
     "image4 image6";
   grid-auto-rows: 165px;
   grid-column-gap: 60px;
+  grid-row-gap: 40px;
   width: 100%;
 }
 section.pied_de_pages {

@@ -88,8 +88,9 @@ section ul#activites {
     "image5"
     "image6";
   grid-auto-rows: 250px;
-  grid-column-gap: 40px;
+  grid-row-gap: 40px;
   width: 100%;
+  grid-template-rows: auto;
 }
 
 section.pied_de_pages {

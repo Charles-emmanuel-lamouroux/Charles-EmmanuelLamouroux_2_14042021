@@ -20,6 +20,7 @@ ul.ancre li.inscription {
 #presentation {
   display: grid;
   grid-template-areas: "block2 block1";
+  grid-template-columns: 2fr 1fr;
   grid-auto-rows: auto;
 }
 
