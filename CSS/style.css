@@ -26,6 +26,7 @@ h4 {
 h6 {
   font-size: 1.1em;
 }
+
 p {
   font-size: 1rem;
 }
@@ -124,7 +125,7 @@ li.lien {
 }
 
 li.lien > a {
-  font-weight: bold;
+  font-weight: medium;
   color: #000000;
 }
 
@@ -198,6 +199,7 @@ i.fas.fa-map-marker-alt {
 }
 
 /* filtre*/
+
 div.selection {
   display: flex;
   align-items: flex-start;
@@ -539,27 +541,27 @@ div.P1 > img {
 }
 
 .A_propos {
-  padding: 10px auto 10px auto;
+  padding: 10px 0 10px 0;
   grid-area: liste1;
 }
 
 .nos_hebergements {
-  padding: 10px auto 10px auto;
+  padding: 10px 0 10px 0;
   grid-area: liste2;
 }
 
 .Assistance {
-  padding: 10px auto 10px auto;
+  padding: 10px 0 10px 0;
   grid-area: liste3;
 }
 
 .titre_link_foot {
-  margin-block-end: 1em;
+  margin-bottom: 1em;
 }
 
 div.pied_de_pages > ul {
   list-style: none;
-  padding-inline-start: 20px;
+  padding-left: 20px;
 }
 
 .pied_de_pages ul li {
