@@ -6,6 +6,7 @@ body {
   color: black;
 }
 footer {
+  margin-top: 50px;
   background-color: #f2f2f2;
 }
 
@@ -109,6 +110,10 @@ a {
   padding-right: 20px;
   flex-grow: 0;
   padding-left: 34px;
+}
+
+li.inscription > a {
+  color: #0065fc;
 }
 
 ul.ancre li.lien {
@@ -292,6 +297,7 @@ section.info h5 {
 }
 
 .titre_populaires {
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -386,6 +392,7 @@ section.info h5 {
 }
 
 .titre_hebergement {
+  margin-top: 30px;
   margin-left: 35px;
   display: flex;
   justify-content: space-between;
@@ -433,13 +440,14 @@ section.info h5 {
 }
 
 div.texte_hebergement {
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   margin-left: 35px;
 }
 
 /* activetes */
 
-.activites_marseille {
+#activites_marseille {
+  margin-top: 50px;
   font-weight: bold;
 }
 
@@ -531,13 +539,14 @@ div.P1 > img {
   margin: 10px;
 }
 
+/*footer*/
+
 .pied_de_pages {
   max-width: 1500px;
   background-color: #f2f2f2;
   display: grid;
   grid-template-areas: "liste1 liste2 liste3";
   grid-column-gap: 40px;
-  margin: auto;
 }
 
 .A_propos {
@@ -561,6 +570,8 @@ div.P1 > img {
 
 div.pied_de_pages > ul {
   list-style: none;
+  margin-top: 0;
+  padding-top: 0;
   padding-left: 20px;
 }
 

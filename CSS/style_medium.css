@@ -76,7 +76,7 @@ section ul#activites {
   grid-row-gap: 40px;
   width: 100%;
 }
-section.pied_de_pages {
+div.pied_de_pages {
   background-color: #f2f2f2;
   display: grid;
   grid-template-areas:
